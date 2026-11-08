@@ -80,12 +80,6 @@ KIMI_API_KEY=    # Moonshot / Kimi Key。不填也能启动，聊天走离线占
 uvicorn app.main:app --host 0.0.0.0 --port 8787
 ```
 
-| 页面 | 地址 |
-|------|------|
-| 对话 | http://127.0.0.1:8787/ |
-| 健康检查 | http://127.0.0.1:8787/health |
-| 管理后台（需管理员令牌） | http://127.0.0.1:8787/admin |
-
 样例配置默认 FAST / STRONG 两档都走 Kimi（`kimi-k2.6` / `kimi-k3`）。换 DeepSeek、通义、OpenAI 或任何 OpenAI 兼容接口，只改 `.env`，见 [docs/llm-gateway.md](docs/llm-gateway.md)。
 
 ### Docker
